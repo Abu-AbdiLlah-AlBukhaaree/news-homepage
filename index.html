@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" class="text-[15px]">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | News homepage</title>
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body class="font-inter bg-off-white px-4 max-w-7xl mx-auto sm:px-8">
+    <header
+      class="container py-6 mx-auto md:flex md:justify-between md:items-center"
+    >
+      <div class="flex justify-between w-full">
+        <img src="./assets/images/logo.svg" alt="web 3 logo" />
+        <button id="open-nav" type="button" class="md:hidden">
+          <img src="./assets/images/icon-menu.svg" alt="open navigation menu" />
+        </button>
+      </div>
+      <nav
+        id="nav"
+        class="hidden fixed inset-0 bg-[#00000088] md:block md:relative md:bg-transparent"
+      >
+        <div
+          id="nav-items"
+          class="fixed top-0 right-0 bottom-0 left-1/4 bg-off-white p-6 translate-x-full md:relative md:translate-x-0 md:left-0 md:px-0"
+        >
+          <ul
+            class="flex flex-col gap-6 relative top-[20%] md:flex-row md:gap-10"
+          >
+            <li
+              class="hover:text-soft-red transition-all duration-300 ease-linear"
+            >
+              <a href="#">Home</a>
+            </li>
+            <li
+              class="hover:text-soft-red transition-all duration-300 ease-linear"
+            >
+              <a href="#">New</a>
+            </li>
+            <li
+              class="hover:text-soft-red transition-all duration-300 ease-linear"
+            >
+              <a href="#">Popular</a>
+            </li>
+            <li
+              class="hover:text-soft-red transition-all duration-300 ease-linear"
+            >
+              <a href="#">Trending</a>
+            </li>
+            <li
+              class="hover:text-soft-red transition-all duration-300 ease-linear"
+            >
+              <a href="#">Categories</a>
+            </li>
+          </ul>
+
+          <button id="close-nav" class="md:hidden" type="button">
+            <img
+              src="./assets/images/icon-menu-close.svg"
+              alt="Close navigation menu"
+              class="fixed top-5 right-3 z-50"
+            />
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main
+      class="sm:grid sm:grid-cols-2 sm:grid-rows-[repeat(2, minmax(0, 1fr))] sm:gap-x-6 lg:grid-cols-3"
+    >
+      <!-- *** HERO SECTION *** -->
+      <section
+        class="container mb-16 sm:col-span-2 md:grid md:grid-cols-2 md:gap-x-6 lg:block"
+      >
+        <figure>
+          <img
+            src="/assets/images/image-web-3-mobile.jpg"
+            alt="Web 3 image"
+            class="block sm:hidden md:block lg:hidden"
+          />
+          <img
+            src="/assets/images/image-web-3-desktop.jpg"
+            class="w-full hidden sm:block md:hidden lg:block lg:mb-7"
+            alt="Web 3 image landscape"
+          />
+        </figure>
+
+        <article
+          class="max-w-lg lg:grid lg:grid-cols-2 lg:grid-rows-3 lg:max-w-full lg:gap-x-6"
+        >
+          <h1
+            class="font-extrabold text-6xl my-6 text-very-dark-blue lg:col-span-1 lg:row-span-3 lg:my-0"
+          >
+            The Bright Future of Web 3.0?
+          </h1>
+          <p class="text-dark-grayish-blue mb-4 lg:row-span-2">
+            We dive into the next evolution of the web that claims to put the
+            power of the platforms back into the hands of the people. But is it
+            really fulfilling its promise?
+          </p>
+          <button
+            type="button"
+            class="bg-soft-red px-6 py-4 text-off-white uppercase leading-none tracking-[0.2rem] lg:w-max hover:bg-very-dark-blue hover:text-off-white transition-all duration-300 ease-linear"
+          >
+            Read more
+          </button>
+        </article>
+      </section>
+      <!-- *** end of HERO SECTION *** -->
+
+      <!-- *** NEW ARTICLE SECTION *** -->
+      <section
+        class="container bg-very-dark-blue pt-6 px-6 my-16 sm:my-0 h-max"
+      >
+        <h2 class="text-soft-orange font-bold text-4xl">New</h2>
+
+        <!-- new articles -->
+        <article>
+          <!-- single new article -->
+          <article class="py-6">
+            <h3
+              class="text-off-white font-bold text-xl mb-1 hover:text-soft-orange transition-all duration-300 ease-linear"
+            >
+              <a href="#">Hydrogen VS Electric Cars</a>
+            </h3>
+            <p class="text-dark-grayish-blue">
+              Will hydrogen-fueled cars ever catch up to EVs?
+            </p>
+          </article>
+          <!-- end of single new article -->
+
+          <!-- single new article -->
+          <article
+            class="py-6 border-y-solid border-y-[1px] border-y-dark-grayish-blue"
+          >
+            <h3
+              class="text-off-white font-bold text-xl mb-1 hover:text-soft-orange transition-all duration-300 ease-linear"
+            >
+              <a href="#">The Downsides of AI Artistry</a>
+            </h3>
+            <p class="text-dark-grayish-blue">
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+          </article>
+          <!-- end of single new article -->
+
+          <!-- single new article -->
+          <article class="py-6">
+            <h3
+              class="text-off-white font-bold text-xl mb-1 hover:text-soft-orange transition-all duration-300 ease-linear"
+            >
+              <a href="#">Is VC Funding Drying Up?</a>
+            </h3>
+            <p class="text-dark-grayish-blue">
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
+            </p>
+          </article>
+          <!-- end of single new article -->
+        </article>
+      </section>
+      <!-- *** end of NEW ARTICLE SECTION *** -->
+
+      <!-- *** OLD ARTICLE SECTION *** -->
+      <section class="container mb-16 lg:col-span-3">
+        <h2 class="visually-hidden">Old Articles</h2>
+
+        <!-- old articles -->
+        <article class="lg:grid lg:grid-cols-3 lg:gap-x-4">
+          <!-- single old article -->
+          <article class="grid grid-cols-6 gap-x-5 mb-9">
+            <div class="col-span-2">
+              <img
+                src="./assets/images/image-retro-pcs.jpg"
+                class="object-cover"
+                alt="Retro PC"
+              />
+            </div>
+
+            <article class="col-span-4">
+              <p class="text-grayish-blue text-4xl font-extrabold mb-2">01</p>
+              <h3
+                class="text-very-dark-blue font-bold text-xl mb-2 hover:text-soft-red transition-all duration-300 ease-linear"
+              >
+                <a href="#"> Reviving Retro PCs </a>
+              </h3>
+              <p class="text-dark-grayish-blue leading-7">
+                What happens when old PCs are given modern upgrades?
+              </p>
+            </article>
+          </article>
+          <!-- end of single old article -->
+
+          <!-- single old article -->
+          <article class="grid grid-cols-6 gap-x-5 mb-9">
+            <div class="col-span-2">
+              <img
+                src="./assets/images/image-top-laptops.jpg"
+                class="object-cover"
+                alt="Laptop Keyboard"
+              />
+            </div>
+
+            <article class="col-span-4">
+              <p class="text-grayish-blue text-4xl font-extrabold mb-2">02</p>
+              <h3
+                class="text-very-dark-blue font-bold text-xl mb-2 hover:text-soft-red transition-all duration-300 ease-linear"
+              >
+                <a href="#"> Top 10 Laptops of 2022 </a>
+              </h3>
+              <p class="text-dark-grayish-blue leading-7">
+                Our best picks for various needs and budgets.
+              </p>
+            </article>
+          </article>
+          <!-- end of single old article -->
+
+          <!-- single old article -->
+          <article class="grid grid-cols-6 gap-x-5">
+            <div class="col-span-2">
+              <img
+                src="./assets/images/image-gaming-growth.jpg"
+                class="object-cover"
+                alt="A hand throwing a gaming pad up"
+              />
+            </div>
+
+            <article class="col-span-4">
+              <p class="text-grayish-blue text-4xl font-extrabold mb-2">03</p>
+              <h3
+                class="text-very-dark-blue font-bold text-xl mb-2 hover:text-soft-red transition-all duration-300 ease-linear"
+              >
+                <a href="#"> The Growth of Gaming </a>
+              </h3>
+              <p class="text-dark-grayish-blue leading-7">
+                How the pandemic has sparked fresh opportunities.
+              </p>
+            </article>
+          </article>
+          <!-- end of single old article -->
+        </article>
+      </section>
+      <!-- *** end of OLD ARTICLE SECTION *** -->
+    </main>
+
+    <footer></footer>
+    <script type="module" src="./src/main.ts"></script>
+  </body>
+</html>
